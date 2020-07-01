@@ -328,7 +328,6 @@ main {
         max-width: 25%;
         height: 430px;
         padding: 15px;
-        transition: all 0.3s linear;
 
         &--main {
             flex: 50%;
@@ -355,7 +354,6 @@ main {
         position: relative;
         width: 100%;
         height: 100%;
-        transition: all 0.3s linear;
     }
 
     .item-image-container {
@@ -391,7 +389,6 @@ main {
         width: 100%;
         height: 100%;
         z-index: 2;
-        transition: all 0.3s linear;
     }
 
     .item-hidden {
@@ -406,7 +403,6 @@ main {
         background: rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         z-index: 1;
-        transition: all 0.3s linear;
     }
 
     &__title {
@@ -446,11 +442,11 @@ main {
 .item-image-container:active .item-hidden,
 .item-image-container:focus .item-hidden,
 .shadow:hover .item-hidden {
-    cursor: pointer;
+    // cursor: pointer;
     background: rgba(0, 0, 0, 0.6);
     outline: none;
     z-index: 4;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -459,6 +455,7 @@ main {
 .item-image-container:focus .item-title-container {
     z-index: 0;
     opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .social {
@@ -470,7 +467,8 @@ main {
         max-width: 48px;
         max-height: 48px;
         margin: 15px;
-        transition: all 0.3s linear;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
 
         &__link {
             width: 100%;
@@ -489,7 +487,6 @@ main {
     @include tablet {
         max-height: 1350px;
     }
- 
  
     @include phablet {
         max-height: 1100px;
